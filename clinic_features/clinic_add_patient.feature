@@ -5,12 +5,6 @@ Feature: Adding a Patient.
 @addpatient
 Scenario: I create an adult patient and try to fill out all fields.
 Given my app is running
-#Temp solution until update
-And I touch "Update"
-Then I wait for 10 seconds
-Then I touch on screen 10 from the left and 10 from the top
-Then I touch on screen 10 from the left and 10 from the top
-
 #Navigate to Patients page
 Then I swipe right
 Then I touch "Patients"

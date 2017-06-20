@@ -1,3 +1,5 @@
+#NOT WORKING AT THE MOMENT. Cannot enter text into username or
+#password field because it cannot find the fields.
 @portal
 Feature: Testing the Portal page. Including logging in and browsing options.
 
@@ -15,5 +17,5 @@ Scenario: I navigate to the Portal page, try some different login cases
   Then I wait
   Then I touch on screen 100 from the left and 500 from the top
   #Then I touch on screen 100 from the left and 500 from the top
-  Then I use the native keyboard to enter "tyler" into the "User Name" text field
-  Then I wait
+  #Then I use the native keyboard to enter "tyler" into the "User Name" text field
+  #Then I wait

@@ -3,27 +3,21 @@ Feature: Editing patient information.
   I should be able to get into a patient's profile and edit it.
 
 @editpatient
-Scenario: I want to access a test account and test out the
- different features on the patient page.
+Scenario: I want to access a test account page and test out the
+ different features on the patient page. I will test out the Search
+ functionality as well as the ability to change patient information.
 Given my app is running
-#Temp solution until update
-And I touch "Update"
-Then I wait for 10 seconds
-Then I touch on screen 10 from the left and 10 from the top
-Then I touch on screen 10 from the left and 10 from the top
-Then I wait
-
 Then I swipe right
 And I touch "Patients"
 #Just in case I am already on the Patients page
 Then I touch on screen 500 from the left and 50 from the top
 And I wait
-Then I use the native keyboard to enter "test" into the "Search" input field
-#TODO: Be able to select a specific patient vs touching on screen (L:14,15)
+
+#Now we will choose a test patient named Adam Testing
+Then I use the native keyboard to enter "Adam" into the "Search" input field
 And I wait
-Then I touch on screen 100 from the left and 500 from the top
-#Then I touch on screen 100 from the left and 500 from the top
-#Should be on profile now in this case
+Then I touch "Testing, Adam"
+#Should be on profile now
 And I wait
 Then I touch "Edit"
 Then I wait
@@ -39,17 +33,6 @@ Then I use the native keyboard to enter "changing some info" into input field nu
 Then I wait
 Then I touch "SAVE"
 Then I wait
-
-#I have set an ID for this button because otherwise it cannot be found.
-#Then I touch the "letsgetstarted" button
-#Then I wait for 3 seconds
-#TODO: Be able to select certain items by ID or at least use touch.
-#Then I touch the "ADD" button
-#And I wait
-#Then I touch the "REMOVE" button
-#And I wait
-#Then I touch the "CANCEL" button
-#And I wait
 
 #Now we go into Notes
 Then I touch "Notes"
@@ -70,11 +53,18 @@ And I wait
 #Now into Home Therapy Plan
 Then I touch "Home Therapy Plan"
 And I wait
-#Now lets create a plan with 1 activity, save it, then edit it and remove it.
+
+#Now lets create a plan with 1 activity, save it, edit it, and remove it.
 Then I touch "CREATE PLAN"
 And I wait
 Then I touch "ADD"
 And I wait
+Then I touch "NOTES"
+And I wait
+Then I touch "DETAILS"
+And I wait
+Then I touch "SETTINGS"
+Then I wait
 Then I touch "SAVE"
 And I wait
 Then I touch "EDIT PLAN"
