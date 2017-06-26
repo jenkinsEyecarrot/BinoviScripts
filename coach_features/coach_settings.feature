@@ -1,7 +1,7 @@
+@settings
 #NEED TO BE LOGGED IN FIRST
 Feature: Testing out the different options on the settings menu.
 
-@settings
 Scenario: Navigating through settings options. Profile will be ignored as it is covered
   in another feature.
   Given my app is running

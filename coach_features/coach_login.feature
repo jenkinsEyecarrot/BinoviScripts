@@ -3,8 +3,6 @@ Feature: Testing login cases
 
 Scenario: Incorrect login case. Random username and password.
   Given my app is running
-  Then I wait and wait
-  Then I touch "Login"
   Then I wait for 3 seconds
   Then I touch "Username"
   Then I wait
@@ -23,8 +21,6 @@ Scenario: Incorrect login case. Random username and password.
 
 Scenario: Incorrect login case 2. Correct username but incorrect password.
   Given my app is running
-  Then I wait and wait
-  Then I touch "Login"
   Then I wait for 3 seconds
   Then I touch "Username"
   Then I wait
@@ -41,11 +37,10 @@ Scenario: Incorrect login case 2. Correct username but incorrect password.
   Then I touch "Ok"
   And I wait and wait
 
+@logincorrect
 Scenario: Correct login case. Correct username and correct password.
   Given my app is running
-  Then I wait and wait
-  Then I touch "Login"
-  Then I wait
+  Then I wait for 3 seconds
   Then I touch "Username"
   Then I wait
   #Correct username

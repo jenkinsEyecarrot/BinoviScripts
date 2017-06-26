@@ -1,7 +1,6 @@
 @session
 Feature: Testing out the different possibilities of a patient session.
 
-@now
 Scenario: Lets start a session and explore the different options.
   Given my app is running
   Then I wait for 7 seconds
