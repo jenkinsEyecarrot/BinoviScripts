@@ -7,6 +7,7 @@ Scenario: I want to access a test account page and test out the
  different features on the patient page. I will test out the Search
  functionality as well as the ability to change patient information.
 Given my app is running
+And I wait for 10 seconds
 Then I swipe right
 And I touch "Patients"
 #Just in case I am already on the Patients page

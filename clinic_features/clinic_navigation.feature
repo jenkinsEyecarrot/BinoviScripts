@@ -6,6 +6,7 @@ Scenario: I will navigate through the different menu options and explore
   some of the different options. Pages that are not tested in detail are
   covered by another scenario.
   Given my app is running
+  Then I wait for 5 seconds
   Then I swipe right
   Then I touch "Patients"
 

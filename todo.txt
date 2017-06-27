@@ -1,0 +1,7 @@
+Jenkins
+-Coach Android on Jenkins
+-Get clinic to pull from GitHub once Tony has made needed changes
+
+Scripts
+-Update clinic scripts once Tony has made changes
+-Figure out how to do tests for coach android

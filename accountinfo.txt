@@ -1,0 +1,25 @@
+Account Info
+U: Jenkins
+P: Carrot1!2@3#
+
+To open Jenkins just open safari
+
+Jenkins Login
+U: sam
+P: Password1!
+
+Github
+U: jenkinsEyecarrot
+P: gzH-FXL-RWH-6wW
+
+Dummy email
+U: carrotjenkins123@gmail.com
+P: Carrot1!2@3#
+
+Clinic Login
+U: tyler
+P: test1234
+
+Coach Login
+U: tweitler
+P: test1234

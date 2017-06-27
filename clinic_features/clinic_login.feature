@@ -31,6 +31,9 @@ And I use the native keyboard to enter "test1234" into input field number 2
 When I touch the "Submit" button
 #I should now be logged in
 Then I wait for 5 seconds
+Then I touch "Skip"
+Then I wait
+Then I touch "Get Started"
 #Return to Dashboard for future testing
 Then I swipe right
 And I touch "Dashboard"
