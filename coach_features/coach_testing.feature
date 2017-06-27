@@ -15,18 +15,6 @@ Scenario: Lets start a session and explore the different options.
   And I wait
   Then I touch "NEXT"
   And I wait
-  Then I touch "NEXT"
-  And I wait
-  Then I touch "NEXT"
-  Then I wait
-  Then I touch "NEXT"
-  And I wait
-  Then I touch "NEXT"
-  And I wait
-  Then I touch "NEXT"
-  And I wait
-  Then I touch "NEXT"
-  And I wait
   Then I touch "FINISH"
   And I wait
   Then I touch on screen 300 from the left and 150 from the top

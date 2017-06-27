@@ -1,9 +1,12 @@
 @login
 Feature: Testing login cases
 
+#This first case is going to check for the notifications pop up. It will fail if its not there.
 Scenario: Incorrect login case. Random username and password.
   Given my app is running
   Then I wait for 3 seconds
+  Then I touch "Allow"
+  Then I wait and wait
   Then I touch "Username"
   Then I wait
   #Incorrect username

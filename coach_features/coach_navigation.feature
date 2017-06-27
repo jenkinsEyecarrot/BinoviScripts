@@ -29,7 +29,7 @@ Scenario: Navigating through menus. Home, History, News, and Messages.
   Then I wait
   #Home
   Then I touch "Home"
-  And I touch "Balance - Level 3"
+  And I touch "Balance - Level 1"
   Then I wait
   Then I touch "Cancel"
   Then I wait and wait

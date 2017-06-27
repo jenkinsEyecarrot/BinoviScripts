@@ -1,0 +1,20 @@
+Followed this http://www.cimgf.com/2015/05/26/setting-up-jenkins-ci-on-a-mac-2/ 
+
+PATH THINGS
+MAIN PATH: export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+
+MONO PATH: export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
+
+
+CUCUMBER THINGS
+DEVICE_TARGET="iPad Pro (9.7 inch) (10.3)" cucumber --tags @login
+
+APP=/Users/jenkins/Desktop/CoachApp/binovi.cloud.home/bch-mobile/bch_mobile.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/bch_mobileiOS.app cucumber
+
+APP=/bin/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3.1/bch_mobileiOS.app cucumber
+
+APP=/Users/jenkins/Desktop/CoachAppNew/binovi.cloud.home/bch-mobile/bch_mobile.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3.1/bch_mobileiOS.app cucumber
+
+bch-mobile/bch_mobile.iOS/bch_mobile.iOS.csproj
+
+~@login > If we want to ignore a certain feature(s)
