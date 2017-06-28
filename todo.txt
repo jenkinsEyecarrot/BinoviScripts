@@ -5,3 +5,7 @@ Jenkins
 Scripts
 -Update clinic scripts once Tony has made changes
 -Figure out how to do tests for coach android
+
+For the git clinic project we need to...
+pod install
+config > Staging

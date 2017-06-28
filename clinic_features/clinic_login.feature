@@ -18,6 +18,7 @@ When I touch the "Submit" button
 And I wait
 Then I should see "Login Error"
 
+@logincorrect
 Scenario: I enter my correct info and it should log me in
 Given my app is running
 And I wait for 5 seconds
