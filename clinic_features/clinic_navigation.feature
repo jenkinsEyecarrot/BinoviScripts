@@ -7,7 +7,7 @@ Scenario: I will navigate through the different menu options and explore
   covered by another scenario.
   Given my app is running
   Then I wait for 5 seconds
-  Then I swipe right
+  Then I touch "hamburger"
   Then I touch "Patients"
 
   #Just in case I am already on the page
@@ -17,15 +17,11 @@ Scenario: I will navigate through the different menu options and explore
   Then I swipe up
   Then I swipe down
   Then I swipe down
-  Then I swipe right
+  Then I touch "hamburger"
   And I wait
   Then I touch "Explore"
   And I wait
-  Then I swipe right
-  And I touch "News"
-  And I wait
-  Then I swipe right
-
+  Then I touch "hamburger"
   #Now we wait for 10 seconds because the portal could take a while to load
   #This could cause issues later
   Then I touch "Portal"
@@ -56,7 +52,7 @@ Scenario: I will navigate through the different menu options and explore
   Then I toggle the switch
   Then I touch "FR-Apply"
   And I wait
-  Then I swipe right
+  Then I touch "hamburger"
   Then I touch "Support"
   Then I wait for 7 seconds
   Then I touch on screen 10 from the left and 10 from the top
@@ -64,23 +60,23 @@ Scenario: I will navigate through the different menu options and explore
   And I wait
 
   #Testing logout and login
-  Then I swipe right
+  Then I touch "hamburger"
   And I wait
   Then I touch "Logout"
 
   #Start CORRECT login case
   Then I touch "Username"
   Then I wait
-  And I use the native keyboard to enter "tyler" into input field number 1
+  And I use the native keyboard to enter "meaganlemke" into input field number 1
   Then I touch done
-  And I use the native keyboard to enter "test1234" into input field number 2
+  And I use the native keyboard to enter "Hilaobvo4?" into input field number 2
   Then I wait
   Then I touch the "Submit" button
   #Should be logged in again
   And I wait and wait
 
   #Lets check out stuff on Dashboard before stopping
-  Then I swipe right
+  Then I touch "hamburger"
   Then I touch "Dashboard"
   Then I touch "LOWEST"
   And I wait
@@ -88,11 +84,11 @@ Scenario: I will navigate through the different menu options and explore
   And I wait and wait
   Then I touch list item number 1
   And I wait
-  Then I swipe right
+  Then I touch "hamburger"
   Then I touch "Dashboard"
   And I wait
   Then I touch list item number 3
   And I wait
-  Then I swipe right
+  Then I touch "hamburger"
   Then I touch "Dashboard"
   Then I wait and wait

@@ -1,12 +1,18 @@
 Followed this http://www.cimgf.com/2015/05/26/setting-up-jenkins-ci-on-a-mac-2/ 
 
 PATH THINGS
+————————————
+
 MAIN PATH: export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 MONO PATH: export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
 
+PODS: /Library/Ruby/Gems/2.0.0/gems/cocoapods-1.2.1/bin/pod
+
 
 CUCUMBER THINGS
+————————————————
+
 DEVICE_TARGET="iPad Pro (9.7 inch) (10.3)" cucumber --tags @login
 
 APP=/Users/jenkins/Desktop/CoachApp/binovi.cloud.home/bch-mobile/bch_mobile.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/bch_mobileiOS.app cucumber
@@ -18,3 +24,26 @@ APP=/Users/jenkins/Desktop/CoachAppNew/binovi.cloud.home/bch-mobile/bch_mobile.i
 bch-mobile/bch_mobile.iOS/bch_mobile.iOS.csproj
 
 ~@login > If we want to ignore a certain feature(s)
+
+If we want to clone just a branch -> git clone -b develop “address here”
+
+IF WE ARE HAVING LOGIN PROBLEMS
+————
+Then I touch "Update"
+Then I wait
+Then I touch on screen 10 from the left and 10 from the top
+————
+
+
+JENKINS THINGS
+———————————————
+
+ADD THIS IF YOU NEED TO INSTALL NEW PODS 
+<————————————————> 
+#!/bin/bash -l 
+cd binovi.cloud 
+pod install 
+<————————————————>
+
+export LANG=en_US.UTF-8
+export PATH="$HOME/Library/Ruby/Gems/2.0.0/gems/bin:$PATH"

@@ -6,7 +6,7 @@ Scenario: I want to be able to access the Explore page and View/Add/Edit/Create
  different activities.
  Given my app is running
  And I wait for 5 seconds
- Then I swipe right
+ Then I touch "hamburger"
  Then I wait
  Then I touch "Explore"
  Then I wait
@@ -84,9 +84,9 @@ Scenario: I want to be able to access the Explore page and View/Add/Edit/Create
  Then I touch the "Search" text field
  Then I use the native keyboard to enter "Angels in" into the "Search" text field
  Then I wait
- Then I swipe right
+ Then I touch "hamburger"
  Then I wait
- 
+
  #Lets return to Dashboard for future testing
  Then I touch "Dashboard"
  Then I wait and wait

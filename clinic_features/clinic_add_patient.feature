@@ -14,27 +14,31 @@ And I wait
 Then I touch the "Add Patient" button
 And I wait
 #First name
-Then I use the native keyboard to enter "IamA" into input field number 1
+Then I use the native keyboard to enter "Adam" into input field number 1
 And I wait
 Then I touch done
 And I wait
 #Last name
-Then I use the native keyboard to enter "TestAccount" into input field number 3
+Then I use the native keyboard to enter "Testing" into input field number 3
 Then I wait
 Then I touch done
 Then I wait
-Then I change the date picker date to "July 28 2010"
+Then I change the date picker date to "July 28 1998"
 Then I wait
 Then I touch the "Done" button
-Then I use the native keyboard to enter "someemailexample@domain.com" into input field number 4
-#Then I wait
-#Then I touch the "Guardian" button
-#Then I wait
+#Then I touch "patientemail"
+Then I use the native keyboard to enter "tweitler+30@gmail.com" into the "patientemail" input field
+Then I wait
+Then I touch the "Guardian" button
+Then I wait
+Then I touch the "Patient" button
 #Then I use the native keyboard to enter "tweitler+10@gmail.com" into input field number 1
 #We wait for prompt to pop up after looking for existing email
 Then I wait
 #Then I touch "OK"
 #Then I wait
-#Then I touch the "SAVE" button
-#Then I wait
 #Patient should now be created
+Then I touch the "SAVE" button
+Then I wait
+Then I use the native keyboard to enter "Adam" into the "Search" input field
+Then I wait and wait

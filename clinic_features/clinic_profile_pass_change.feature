@@ -44,7 +44,7 @@ Scenario: I should be able to navigate to the profile page and change my
 
   #Case 3: Correct CURRENT but NEW does not match criteria check
   Then I touch "Current Password"
-  Then I use the native keyboard to enter "test1234" into input field number 1
+  Then I use the native keyboard to enter "Hilaobvo4?" into input field number 1
   And I touch done
   Then I use the native keyboard to enter "testr" into input field number 2
   And I touch done
@@ -56,7 +56,7 @@ Scenario: I should be able to navigate to the profile page and change my
 
   #Case 4: Correct Password Change Case
   Then I touch "Current Password"
-  And I use the native keyboard to enter "test1234" into input field number 1
+  And I use the native keyboard to enter "Hilaobvo4?" into input field number 1
   Then I touch done
   Then I use the native keyboard to enter "test12345" into input field number 2
   And I touch done
@@ -69,20 +69,20 @@ Scenario: I should be able to navigate to the profile page and change my
   #END Case 4
 
   #Lets try logging in with our new password
-  Then I swipe right
+  Then I touch "hamburger"
   Then I wait
   Then I touch "Logout"
   #Start CORRECT login case
   Then I touch "Username"
   Then I wait
-  And I use the native keyboard to enter "tyler" into input field number 1
+  And I use the native keyboard to enter "meaganlemke" into input field number 1
   Then I touch done
   And I use the native keyboard to enter "test12345" into input field number 2
   Then I wait
   Then I touch the "Submit" button
   #Should be logged in again
   And I wait and wait
-  Then I swipe right
+  Then I touch "hamburger"
   Then I touch "Settings"
   And I wait
   Then I touch "Profile"
@@ -91,9 +91,9 @@ Scenario: I should be able to navigate to the profile page and change my
   Then I touch "Current Password"
   And I use the native keyboard to enter "test12345" into input field number 1
   Then I touch done
-  And I use the native keyboard to enter "test1234" into input field number 2
+  And I use the native keyboard to enter "Hilaobvo4?" into input field number 2
   Then I touch done
-  Then I use the native keyboard to enter "test1234" into input field number 3
+  Then I use the native keyboard to enter "Hilaobvo4?" into input field number 3
   When I touch "Apply"
   And I wait
   Then I wait for "Change Password" to appear
@@ -101,5 +101,5 @@ Scenario: I should be able to navigate to the profile page and change my
   Then I wait
 
   #Lets return to Dashboard for future testing
-  Then I swipe right
+  Then I touch "hamburger"
   Then I touch "Dashboard"
