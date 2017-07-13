@@ -56,8 +56,6 @@ Scenario: I want to be able to access the Explore page and View/Add/Edit/Create
  Then I touch "SAVE"
  Then I wait
  Then I touch "Short Description"
- Then I touch "description"
- Then I use the native keyboard to enter "Description goes here" into input field number 1
  Then I touch "Detailed Steps"
  Then I touch "Photos"
  Then I touch "Videos"
@@ -84,7 +82,7 @@ Scenario: I want to be able to access the Explore page and View/Add/Edit/Create
 
  #Next we will check search functionality is working
  Then I touch the "Search" text field
- Then I use the native keyboard to enter "Angels in" into the "Search" text field
+ Then I use the native keyboard to enter "Some activity" into the "Search" text field
  Then I wait
  Then I touch "hamburger"
  Then I wait
