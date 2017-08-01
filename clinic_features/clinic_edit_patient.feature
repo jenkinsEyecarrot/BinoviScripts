@@ -7,6 +7,27 @@ Scenario: I want to access a test account page and test out the
  different features on the patient page. I will test out the Search
  functionality as well as the ability to change patient information.
 Given my app is running
+Then I wait to see "Username"
+And I wait for 2 seconds
+
+#Start CORRECT login case
+Then I touch "Username"
+Then I wait
+And I use the native keyboard to enter "meaganlemke" into input field number 1
+Then I touch done
+And I use the native keyboard to enter "Hilaobvo4?" into input field number 2
+When I touch the "Submit" button
+#I should now be logged in
+Then I wait for 5 seconds
+Then I swipe left
+Then I swipe left
+Then I swipe left
+Then I swipe left
+Then I swipe left
+Then I touch "Get Started"
+
+#Start edit patient...
+Then I wait and wait
 And I wait for 3 seconds
 Then I touch "hamburger"
 And I touch "Patients"
@@ -14,10 +35,10 @@ And I touch "Patients"
 Then I touch on screen 500 from the left and 50 from the top
 And I wait
 
-#Now we will choose a test patient named Adam Testing
-Then I use the native keyboard to enter "Adam" into the "Search" input field
+#Now we will choose a test patient named Tom Testing
+Then I use the native keyboard to enter "Tom" into the "Search" input field
 And I wait
-Then I touch "Testing, Adam"
+Then I touch "Testing, Tom"
 #Should be on profile now
 And I wait
 Then I touch "Edit"
@@ -85,7 +106,7 @@ Then I touch "Edit"
 Then I wait
 Then I clear input field number 1
 #First name
-Then I use the native keyboard to enter "Adam" into input field number 1
+Then I use the native keyboard to enter "Tom" into input field number 1
 And I wait
 Then I touch done
 And I wait

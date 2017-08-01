@@ -1,5 +1,3 @@
-Followed this http://www.cimgf.com/2015/05/26/setting-up-jenkins-ci-on-a-mac-2/ 
-
 PATH THINGS
 ————————————
 
@@ -9,6 +7,8 @@ MONO PATH: export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:
 
 PODS: /Library/Ruby/Gems/2.0.0/gems/cocoapods-1.2.1/bin/pod
 
+export LANG=en_US.UTF-8
+export PATH="$HOME/Library/Ruby/Gems/2.0.0/gems/bin:$PATH"
 
 CUCUMBER THINGS
 ————————————————
@@ -45,5 +45,8 @@ cd binovi.cloud
 pod install 
 <————————————————>
 
-export LANG=en_US.UTF-8
-export PATH="$HOME/Library/Ruby/Gems/2.0.0/gems/bin:$PATH"
+IF WE WANT TO POLL SCM (BUILD AT TIME INTERVAL)
+<————————————————> 
+H/5 * * * *
+Above will do it every 5 minutes
+<————————————————> 

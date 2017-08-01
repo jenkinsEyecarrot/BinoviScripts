@@ -11,7 +11,8 @@ Scenario: Navigating through menus. Home, History, News, and Messages.
   And I swipe up
   And I swipe down
   Then I wait
-  Then I touch "Tuesday, June 20, 2017"
+  Then I touch on screen 300 from the left and 300 from the top
+  #Then I touch "Tuesday, June 20, 2017"
   Then I wait
   Then I touch on screen 10 from the left and 50 from the top
   Then I wait and wait

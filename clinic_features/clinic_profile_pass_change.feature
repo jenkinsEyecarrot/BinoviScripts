@@ -6,7 +6,26 @@ Scenario: I should be able to navigate to the profile page and change my
   password. It should not let me change unless the proper conditions are met.
   We will attempt 4 different cases for this scenario.
   Given my app is running
-  And I wait
+  Then I wait to see "Username"
+  And I wait for 2 seconds
+
+  #Start CORRECT login case
+  Then I touch "Username"
+  Then I wait
+  And I use the native keyboard to enter "meaganlemke" into input field number 1
+  Then I touch done
+  And I use the native keyboard to enter "Hilaobvo4?" into input field number 2
+  When I touch the "Submit" button
+  #I should now be logged in
+  Then I wait for 5 seconds
+  Then I swipe left
+  Then I swipe left
+  Then I swipe left
+  Then I swipe left
+  Then I swipe left
+  Then I touch "Get Started"
+
+  Then I wait and wait
   Then I swipe right
   Then I wait to see "Settings"
   And I touch "Settings"

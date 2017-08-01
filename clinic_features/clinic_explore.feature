@@ -5,6 +5,27 @@ Feature: Testing out features on Explore page specifically.
 Scenario: I want to be able to access the Explore page and View/Add/Edit/Create
  different activities.
  Given my app is running
+ Then I wait to see "Username"
+ And I wait for 2 seconds
+
+ #Start CORRECT login case
+ Then I touch "Username"
+ Then I wait
+ And I use the native keyboard to enter "meaganlemke" into input field number 1
+ Then I touch done
+ And I use the native keyboard to enter "Hilaobvo4?" into input field number 2
+ When I touch the "Submit" button
+ #I should now be logged in
+ Then I wait for 5 seconds
+ Then I swipe left
+ Then I swipe left
+ Then I swipe left
+ Then I swipe left
+ Then I swipe left
+ Then I touch "Get Started"
+
+ #Start explore...
+ Then I wait and wait
  And I wait for 5 seconds
  Then I touch "hamburger"
  Then I wait

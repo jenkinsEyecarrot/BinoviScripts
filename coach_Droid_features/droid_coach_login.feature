@@ -25,7 +25,8 @@ Scenario: Incorrect login case 2. Correct username but incorrect password.
 
 @logincorrect
 Scenario: Correct login case. Correct username and correct password.
-  Given I see the text "Username"
+  #Given I see the text "Username"
+  Then I wait for 20 seonds
   Then I enter "tweitler" into input field number 1
   Then I wait
   Then I enter "test1234" into input field number 2
